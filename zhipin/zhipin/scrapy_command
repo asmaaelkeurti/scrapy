@@ -1,0 +1,2 @@
+scrapy crawl district_url -t json -o - > "district_link.json"
+scrapy crawl area_url -t json -o - > "area_link.json"
