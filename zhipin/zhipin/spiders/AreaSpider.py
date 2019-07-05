@@ -1,16 +1,18 @@
 import scrapy
-import json
+from ..items import AreaItem
+import pymongo
 
 
 class AreaSpider(scrapy.Spider):
     name = "area_url"
+    custom_settings = {'ITEM_PIPELINES': {'zhipin.pipelines.AreaPipeline': 400}}
 
     def start_requests(self):
-        with open("district_link.json", 'r') as f:
-            urls = [link['district_link'] for link in json.load(f)]
+        client = pymongo.MongoClient('mongodb://localhost:27017/')
+        db = client['zhipin']
 
-        for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+        for d in db['district_items'].find():
+            yield scrapy.Request(url=d['district_link'], callback=self.parse)
 
     def parse(self, response):
         area_result = list(zip(response.xpath('//div[@class="condition-box"]/dl[3]/dd/a/@href').getall()[1:],
@@ -18,8 +20,8 @@ class AreaSpider(scrapy.Spider):
 
         for link in area_result:
             if len(link[0]) > 20:
-                yield {
-                    'district_link': response.request.url,
-                    'area_link': response.urljoin(link[0]),
-                    'area': link[1]
-                }
+                yield AreaItem(
+                    district_link=response.request.url,
+                    area_link=response.urljoin(link[0]),
+                    area_name=link[1])
+
