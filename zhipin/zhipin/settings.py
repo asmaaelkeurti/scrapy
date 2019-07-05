@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'zhipin.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3588.400'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -90,3 +90,6 @@ DOWNLOAD_DELAY = 7
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 #FEED_EXPORT_ENCODING = 'utf-8'
+
+MONGO_URi = 'mongodb://localhost:27017/'
+MONGO_DATABASE = 'zhipin'

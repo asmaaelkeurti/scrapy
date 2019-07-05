@@ -8,7 +8,6 @@
 import scrapy
 
 
-class ZhipinItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class DistrictItem(scrapy.Item):
+    district_link = scrapy.Field()
+    district_name = scrapy.Field()
