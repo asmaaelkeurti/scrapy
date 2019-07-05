@@ -35,3 +35,11 @@ class JobItem(scrapy.Item):
     job_link = scrapy.Field()
     first_updated_time = scrapy.Field()
     last_updated_time = scrapy.Field()
+
+
+class JobDetailItem(scrapy.Item):
+    job_link = scrapy.Field()
+    job_description = scrapy.Field()
+    industry = scrapy.Field()
+    human_count = scrapy.Field()
+    company_fullname = scrapy.Field()

@@ -8,8 +8,6 @@ class JobSpider(scrapy.Spider):
     name = "job_url"
     custom_settings = {'ITEM_PIPELINES': {'zhipin.pipelines.JobPipeline': 400}}
 
-    start_urls = ['https://www.zhipin.com/c101020100/a_%E5%BC%A0%E6%B1%9F-b_%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA/']
-
     def start_requests(self):
         client = pymongo.MongoClient('mongodb://localhost:27017/')
         db = client['zhipin']
@@ -44,6 +42,6 @@ class JobSpider(scrapy.Spider):
                 ))
 
         next_page = response.xpath('//div[@class="page"]/a[last()]/@href').get()
-        if len(next_page) > 20:
+        if (next_page is not None) and (len(next_page) > 20):
             next_page = response.urljoin(next_page)
             yield scrapy.Request(next_page, callback=self.parse)
