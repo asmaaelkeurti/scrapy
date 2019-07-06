@@ -6,6 +6,8 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
+import random
 
 
 class ZhipinSpiderMiddleware(object):
@@ -101,3 +103,24 @@ class ZhipinDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+class ProxyMiddleware(object):
+    # overwrite process request
+    def process_request(self, request, spider):
+        request.meta['proxy'] = "http://120.132.52.6:8888"
+
+
+class ZhipinUserAgentMiddleware(UserAgentMiddleware):
+    def __init__(self, user_agent):
+        self.user_agent = user_agent
+
+    # 从setting.py中引入设置文件
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(user_agent=crawler.settings.get('MY_USER_AGENT'))
+
+    # 设置User-Agent
+    def process_request(self, request, spider):
+        agent = random.choice(self.user_agent)
+        request.headers['User-Agent'] = agent
