@@ -108,7 +108,9 @@ class ZhipinDownloaderMiddleware(object):
 class ProxyMiddleware(object):
     # overwrite process request
     def process_request(self, request, spider):
-        request.meta['proxy'] = "http://120.132.52.6:8888"
+        with open('ip_pool', 'r') as f:
+            ip_pool = f.read().split('\n\n')[:-1]
+        request.meta['proxy'] = "http://%s" % random.choice(ip_pool)
 
 
 class ZhipinUserAgentMiddleware(UserAgentMiddleware):
