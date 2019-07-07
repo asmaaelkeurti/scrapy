@@ -12,7 +12,7 @@ class JobDetailSpider(scrapy.Spider):
         client = pymongo.MongoClient('mongodb://localhost:27017/')
         db = client['zhipin']
 
-        for d in db['job_items'].find({"job_description": {"$exists": False}}).limit(2000):
+        for d in [doc for doc in db['job_items'].find({"job_description": {"$exists": False}}).limit(2000)]:
             yield scrapy.Request(url=d['job_link'], callback=self.parse)
 
     def parse(self, response):
