@@ -59,17 +59,16 @@ class AreaPipeline(object):
         self.client.close()
 
     def process_item(self, item, spider):
-        item['last_updated_time'] = datetime.datetime.now()
+
         item['district_name'] = self.db['district_items'].find_one({"district_link": item['district_link']})['district_name']
 
         result = self.db[self.collection_name].find_one({'area_link': item['area_link']})
         if result is None:
             item['first_updated_time'] = datetime.datetime.now()
+            item['last_updated_time'] = datetime.datetime.now()
             self.db[self.collection_name].insert_one(dict(item))
         else:
-            self.db[self.collection_name].update_one({'_id': result['_id']},
-                                                     {"$set": {'last_updated_time': item['last_updated_time']}},
-                                                     upsert=False)
+            pass
         return item
 
 

@@ -6,13 +6,16 @@ import pymongo
 
 class JobSpider(scrapy.Spider):
     name = "job_url"
-    custom_settings = {'ITEM_PIPELINES': {'zhipin.pipelines.JobPipeline': 400}}
+    custom_settings = {
+        'DOWNLOAD_DELAY': 10,
+        'ITEM_PIPELINES': {'zhipin.pipelines.JobPipeline': 400}
+    }
 
     def start_requests(self):
         client = pymongo.MongoClient('mongodb://localhost:27017/')
         db = client['zhipin']
 
-        for d in db['area_items'].find().sort('last_updated_time', pymongo.ASCENDING).limit(10):
+        for d in db['area_items'].find().sort('last_updated_time', pymongo.ASCENDING).limit(1):
             db['area_items'].update_one({'_id': d['_id']},
                                         {"$set": {'last_updated_time': datetime.datetime.now()}},
                                         upsert=False)
@@ -38,7 +41,8 @@ class JobSpider(scrapy.Spider):
                     salary=link[1],
                     exp_year=link[2],
                     job_link=response.urljoin(link[3]),
-                    company_name=link[4]
+                    company_name=link[4],
+                    request_times=0
                 ))
 
         next_page = response.xpath('//div[@class="page"]/a[last()]/@href').get()

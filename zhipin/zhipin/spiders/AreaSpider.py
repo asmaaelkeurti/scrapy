@@ -5,7 +5,11 @@ import pymongo
 
 class AreaSpider(scrapy.Spider):
     name = "area_url"
-    custom_settings = {'ITEM_PIPELINES': {'zhipin.pipelines.AreaPipeline': 400}}
+    custom_settings = {
+        'DOWNLOAD_DELAY': 20,
+        'ITEM_PIPELINES': {'zhipin.pipelines.AreaPipeline': 400},
+        'DOWNLOADER_MIDDLEWARES': {'zhipin.middlewares.ZhipinUserAgentMiddleware': 100}
+    }
 
     def start_requests(self):
         client = pymongo.MongoClient('mongodb://localhost:27017/')
