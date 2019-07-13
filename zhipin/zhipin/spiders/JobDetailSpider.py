@@ -1,9 +1,11 @@
 import scrapy
+import sys
 import pymongo
 import random
-from ..items import JobDetailItem
-from ..IpPoolRefresh import Ip_Refresh
+from zhipin.items import JobDetailItem
+from zhipin.IpPoolRefresh import Ip_Refresh
 from scrapy.exceptions import CloseSpider
+sys.path.append('..')
 
 
 class JobDetailSpider(scrapy.Spider):

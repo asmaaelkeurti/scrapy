@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="85ebe31f-f18b-4c05-b524-996ff0387dc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhipin/zhipin/IpPoolRefresh.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/IpPoolRefresh.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zhipin/zhipin/ip_pool" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/ip_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zhipin/zhipin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zhipin/zhipin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zhipin/zhipin/spiders/JobDetailSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/zhipin/zhipin/spiders/JobDetailSpider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,32 +25,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhipin/zhipin/spiders/JobDetailSpider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+            <state relative-caret-position="405">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="31" />
               <folding>
-                <element signature="e#193#207#0" expanded="true" />
-                <element signature="e#263#998#0" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/ip_pool">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
+              <folding>
+                <element signature="e#193#207#0" expanded="true" />
+                <element signature="e#263#998#0" />
+                <element signature="e#1034#2125#0" />
+                <element signature="e#2160#3357#0" />
+                <element signature="e#3398#4794#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhipin/zhipin/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="494">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
-                <element signature="e#1#42#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,26 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhipin/zhipin/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="37" column="17" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/multiprocessing/spawn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapy-env/Lib/site-packages/pymongo/mongo_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="507" selection-start-line="507" selection-end-line="507" />
+            <state relative-caret-position="95">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -101,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhipin/zhipin/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+            <state relative-caret-position="750">
+              <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
               <folding>
                 <element signature="e#169#195#0" expanded="true" />
                 <element signature="e#325#1987#0" />
@@ -113,10 +107,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhipin/zhipin/IpPoolRefresh.py">
+        <entry file="file://$PROJECT_DIR$/zhipin/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="38">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -124,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="281">
+              <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -164,19 +158,20 @@
         <option value="$PROJECT_DIR$/zhipin/zhipin/ip_pool" />
         <option value="$PROJECT_DIR$/zhipin/zhipin/spiders/JobSpider.py" />
         <option value="$PROJECT_DIR$/zhipin/zhipin/IpPoolRefresh.py" />
-        <option value="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" />
-        <option value="$PROJECT_DIR$/zhipin/zhipin/settings.py" />
         <option value="$PROJECT_DIR$/zhipin/main.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/zhipin/zhipin/spiders/JobDetailSpider.py" />
+        <option value="$PROJECT_DIR$/zhipin/zhipin/middlewares.py" />
+        <option value="$PROJECT_DIR$/zhipin/zhipin/settings.py" />
         <option value="$PROJECT_DIR$/zhipin/zhipin/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="21" />
-    <option name="y" value="154" />
-    <option name="width" value="1694" />
+    <option name="x" value="262" />
+    <option name="y" value="455" />
+    <option name="width" value="1293" />
     <option name="height" value="908" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -204,6 +199,13 @@
               <item name="zhipin" type="462c0819:PsiDirectoryNode" />
               <item name="zhipin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="scrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="zhipin" type="462c0819:PsiDirectoryNode" />
+              <item name="zhipin" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -220,10 +222,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\scrapy\scrapy\zhipin" />
       <recent name="C:\Users\Administrator\Desktop\scrapy\scrapy\zhipin\zhipin" />
       <recent name="C:\Users\Administrator\Desktop\scrapy\scrapy\zhipin\zhipin\spiders" />
       <recent name="C:\Users\Administrator\Desktop\scrapy\scrapy" />
-      <recent name="C:\Users\Administrator\Desktop\scrapy\scrapy\zhipin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,12 +379,12 @@
       <workItem from="1562512473373" duration="1940000" />
       <workItem from="1562549868151" duration="11685000" />
       <workItem from="1562681387543" duration="4577000" />
-      <workItem from="1562978120789" duration="19126000" />
+      <workItem from="1562978120789" duration="27063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107318000" />
+    <option name="totallyTimeSpent" value="115255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,14 +397,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15565032" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15565032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3167028" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.09978308" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5140998" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,13 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/ip_pool">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhipin/zhipin/IpPoolRefresh.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -567,17 +561,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/multiprocessing/spawn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="176">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy-env/Lib/site-packages/pymongo/mongo_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="507" selection-start-line="507" selection-end-line="507" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhipin/zhipin/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+        <state relative-caret-position="750">
+          <caret line="119" column="27" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
           <folding>
             <element signature="e#169#195#0" expanded="true" />
             <element signature="e#325#1987#0" />
@@ -596,51 +607,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy-env/Lib/site-packages/pymongo/mongo_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="507" selection-start-line="507" selection-end-line="507" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/multiprocessing/spawn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhipin/zhipin/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
-          <folding>
-            <element signature="e#193#207#0" expanded="true" />
-            <element signature="e#263#998#0" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhipin/zhipin/spiders/JobDetailSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="405">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/ip_pool">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhipin/zhipin/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="494">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
-            <element signature="e#1#42#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhipin/zhipin/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+            <element signature="e#263#998#0" />
+            <element signature="e#1034#2125#0" />
+            <element signature="e#2160#3357#0" />
+            <element signature="e#3398#4794#0" />
           </folding>
         </state>
       </provider>

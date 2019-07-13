@@ -1,0 +1,17 @@
+setup.py
+zhipin/IpPoolRefresh.py
+zhipin/__init__.py
+zhipin/items.py
+zhipin/main.py
+zhipin/middlewares.py
+zhipin/pipelines.py
+zhipin/settings.py
+zhipin.egg-info/PKG-INFO
+zhipin.egg-info/SOURCES.txt
+zhipin.egg-info/dependency_links.txt
+zhipin.egg-info/top_level.txt
+zhipin/spiders/AreaSpider.py
+zhipin/spiders/DistrictSpider.py
+zhipin/spiders/JobDetailSpider.py
+zhipin/spiders/JobSpider.py
+zhipin/spiders/__init__.py
