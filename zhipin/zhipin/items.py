@@ -44,3 +44,4 @@ class JobDetailItem(scrapy.Item):
     industry = scrapy.Field()
     human_count = scrapy.Field()
     company_fullname = scrapy.Field()
+    job_address = scrapy.Field()
