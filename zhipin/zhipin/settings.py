@@ -22,7 +22,7 @@ NEWSPIDER_MODULE = 'zhipin.spiders'
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -53,9 +53,9 @@ DOWNLOAD_DELAY = 8
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'zhipin.middlewares.ProxyMiddleware': 120,
+    'zhipin.middlewares.ProxyMiddleware': 120
 #    'zhipin.middlewares.ZhipinDownloaderMiddleware': 100,
-    'zhipin.middlewares.ZhipinUserAgentMiddleware': 100,
+#    'zhipin.middlewares.ZhipinUserAgentMiddleware': 100,
 }
 
 MY_USER_AGENT = [
@@ -71,8 +71,6 @@ MY_USER_AGENT = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36",
 ]
-
-
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html

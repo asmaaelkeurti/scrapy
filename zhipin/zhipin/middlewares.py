@@ -8,6 +8,9 @@
 from scrapy import signals
 from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 import random
+from scrapy.downloadermiddlewares.retry import RetryMiddleware
+
+
 
 
 class ZhipinSpiderMiddleware(object):
@@ -105,12 +108,29 @@ class ZhipinDownloaderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class ProxyMiddleware(object):
-    # overwrite process request
+class ProxyMiddleware(RetryMiddleware):
+    def __init__(self, user_agent):
+        self.user_agent = user_agent
+        self.max_retry_times = 5
+        self.priority_adjust = 0
+        self.retry_http_codes = set([302])
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(user_agent=crawler.settings.get('MY_USER_AGENT'))
+
     def process_request(self, request, spider):
+        agent = random.choice(self.user_agent)
+        request.headers['User-Agent'] = agent
+
         with open('ip_pool', 'r') as f:
             ip_pool = f.read().split('\n\n')[:-1]
         request.meta['proxy'] = "http://%s" % random.choice(ip_pool)
+
+    def process_response(self, request, response, spider):
+        return response
+
+
 
 
 class ZhipinUserAgentMiddleware(UserAgentMiddleware):
