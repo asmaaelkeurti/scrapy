@@ -1,4 +1,5 @@
 import requests
+import time
 
 
 class Ip_Refresh:
@@ -25,4 +26,5 @@ class Ip_Refresh:
 
 if __name__ == '__main__':
     Ip_Refresh().refresh()
+
 
