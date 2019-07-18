@@ -37,7 +37,7 @@ if __name__ == '__main__':
             p.start()
             p.join()
             print('-------------------------------------------done----------------------------------------------------------------')
-        for y in range(8):
+        for y in range(0):
             p = Process(target=f_url, args=(y,))
             p.start()
             p.join()

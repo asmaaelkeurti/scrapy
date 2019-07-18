@@ -22,14 +22,14 @@ class JobDetailSpider(scrapy.Spider):
         db = client['zhipin']
 
         job_urls = [doc for doc in db['job_items'].find({"$and": [{"job_description": {"$exists": False}},
-                                                                  {"request_times": {"$lt": 5}}]}).limit(8000)]
+                                                                  {"request_times": {"$lt": 9}}]}).limit(30000)]
         random.shuffle(job_urls)
         for d in job_urls:
             db['job_items'].update_one({'_id': d['_id']},
                                        {"$set": {'request_times': d['request_times']+1}},
                                        upsert=False
                                        )
-            yield scrapy.Request(url=d['job_link'], callback=self.parse)
+            yield scrapy.Request(url=d['job_link'], callback=self.parse, errback=self.errback_http)
 
     def parse(self, response):
         if response.status == 302:
@@ -45,5 +45,7 @@ class JobDetailSpider(scrapy.Spider):
                 job_address=response.xpath('//div[@class="location-address"]/text()').get()
             )
 
-
+    def errback_http(self, failure):
+        self.logger.error(repr(failure))
+        Ip_Refresh().refresh()
 
