@@ -10,6 +10,7 @@ cssselect==1.0.3
 hyperlink==19.0.0
 idna==2.8
 incremental==17.5.0
+jieba==0.39
 lxml==4.3.4
 parsel==1.5.1
 pyasn1==0.4.5
@@ -29,5 +30,5 @@ six==1.12.0
 Twisted==19.2.1
 urllib3==1.25.3
 w3lib==1.20.0
--e git+git@github.com:asmaaelkeurti/scrapy.git@c8bd5559396b0f895e97b7fe76058737ab3740f5#egg=zhipin&subdirectory=zhipin
+-e git+git@github.com:asmaaelkeurti/scrapy.git@7ebf70c4e823eaf768b39eba3f80873dd8e2ec5c#egg=zhipin&subdirectory=zhipin
 zope.interface==4.6.0
