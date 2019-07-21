@@ -25,21 +25,21 @@ def f_url(iteration):
 
 def check_ip_balance():
     response = requests.get(
-        'http://wapi.http.cnapi.cc/package_balance?neek=74684&appkey=4052ee99c728fc96a399d0dccf2f92e5&ac=57299')
+        'http://wapi.http.cnapi.cc/package_balance?neek=74684&appkey=ce326b3d702e6621faf369d061fc6e76&ac=58152')
     response_data = json.loads(response.content)
     return response_data['data']['package_balance']
 
 
 if __name__ == '__main__':
-    while check_ip_balance() > 5:
+    while check_ip_balance() > 10:
         for x in range(4):
             p = Process(target=f_detail, args=(x,))
             p.start()
             p.join()
             print('-------------------------------------------done----------------------------------------------------------------')
-        for y in range(0):
+        for y in range(1):
             p = Process(target=f_url, args=(y,))
             p.start()
             p.join()
             print('-------------------------------------------done----------------------------------------------------------------')
-        Ip_Refresh().refresh()
+        # Ip_Refresh().refresh()
