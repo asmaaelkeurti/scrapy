@@ -140,7 +140,8 @@ class JobDetailPipeline(object):
                                                      {"$set": {'job_description': item['job_description'],
                                                                'industry': item['industry'],
                                                                'human_count': item['human_count'],
-                                                               'company_fullname': item['company_fullname']
+                                                               'company_fullname': item['company_fullname'],
+                                                               'job_address': item['job_address']
                                                                }},
                                                      upsert=False)
             return item

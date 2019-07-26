@@ -158,16 +158,16 @@ class Mongo:
 if __name__ == '__main__':
     m = Mongo()
 
-    m.create_table()
-    m.insert_job_detail_words()
+    # m.create_table()
+    # m.insert_job_detail_words()
     print('table created')
-    #m.separate_salary()
+    m.separate_salary()
     print('calculate salary upper and lower bound')
-    #m.separate_words_set()
+    m.separate_words_set()
     print('separate words')
-    #m.clean_district_name()
+    m.clean_district_name()
     print('clean district name')
 
-    # m.clean_job_detail_table()
-    #m.insert_job_detail()
+    m.clean_job_detail_table()
+    m.insert_job_detail()
 
